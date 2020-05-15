@@ -1,0 +1,190 @@
+<html>
+<head>
+<title>Morroncito</title>
+<meta name="viewport" content="width=device-width, user-scalable=1.0">
+
+</head>
+
+<body background="imagen fondo 4.jpg" style="background-repeat:repeat; position:center center; background-size:cover; background-attachment:fixed; ">
+
+<script>
+function cambiarTrack(track) {
+   var path =  track.getAttribute("path")
+   viejo_audio = document.getElementById("reproductor")
+   audio_padre = viejo_audio.parentNode
+   audio_padre.removeChild(viejo_audio)
+   nuevo_audio = document.createElement("audio")
+   nuevo_audio.setAttribute("id","reproductor")
+   nuevo_audio.setAttribute("controls", "controls")
+   nuevo_audio.setAttribute("autoplay", "autoplay")
+   nuevo_audio.setAttribute("loop", "loop")
+   source = document.createElement("source")
+   source.setAttribute("src", path)
+   source.setAttribute("type", "audio/mpeg")
+   source.setAttribute("id", "reproductorSource")
+   nuevo_audio.appendChild(source)
+   audio_padre.appendChild(nuevo_audio)
+}
+
+
+function cargarReproductor() {
+         var select = document.getElementById("selectTrack")
+         var path = select.options[0].getAttribute("path")
+   nuevo_audio = document.createElement("audio")
+   nuevo_audio.setAttribute("id","reproductor")
+   nuevo_audio.setAttribute("controls", "controls")       
+   source = document.createElement("source")
+   source.setAttribute("src", path)
+   source.setAttribute("type", "audio/mpeg")
+   source.setAttribute("id", "reproductorSource")
+   nuevo_audio.appendChild(source)
+   padre = document.getElementById("reproductorBox")
+   padre.appendChild(nuevo_audio)
+}
+</script>
+
+
+
+<div id="reproductorBox" align="center">
+<select id = "selectTrack"  multiple onchange="cambiarTrack(this.options[this.selectedIndex]);">
+<option path="Audio/When You Love A Woman.mp3">When You Love A Woman - Journey</option>
+<option path="Audio/Is This Love.mp3">Is This Love - Whitesnake</option>
+<option path="Audio/More Than A Feeling.mp3">More Than A Feeling - Boston</option>
+<option path="Audio/Lights.mp3">Lights - Journey</option>
+<option path="Audio/A Reason to Fight.mp3">A Reason to Fight - Disturbed</option>
+<option path="Audio/Finally.mp3">Finally - Fergie</option>
+<option path="Audio/Its Over.mp3">Its Over - Level 42</option>
+<option path="Audio/Two.mp3">Two - Sleeping At Last</option>
+</select>
+<script>cargarReproductor();</script>
+</div>
+
+
+
+<div style="padding:10px; width:auto; ">
+		<p style="border: dashed blue 4px; font-size:300%; background:Lavender; border-radius:20px; margin:auto; text-align:center; "> 
+			<strong><i>Cuerpo</i></strong>
+		<p style="font-size:150%; text-align:center; color: black; font-family:Lucida Console; font-style:italic; line-height:50px;">
+			Te lo van a poner dif&iacutecil para que te quieras. <br> Porque siempre hay alguien sacando provecho del odio hacia ti misma. <br> De tu falta de autoestima.
+			<br> Va a ser complicado que te aceptes tal cual eres. <br> Porque siempre habr&aacute una imagen externa que intentar&aacute recordarte que no est&aacute bien.
+			<br> Que hay algo malo en ti. <br> Ser&aacute casi imposible que no tengas complejos. <br> Que vivas libre sin importarte el qu&eacute dir&aacuten. <br> Que pases absolutamente 
+			de todos esos comentarios que intentar&aacuten herirte. <br> Te mirar&aacutes al espejo y querr&aacutes ver otra cosa. <br> pero tu cuerpo es un medio para poder vivir.
+			<br> Tu cuerpo te lo dieron tus padres. <br> Se form&oacute en el interior de tu madre. <br> Tu cuerpo y tu cara son la herencia de algo. <br> Hay much&iacutesima gente 
+			que ya no est&aacute a la que le gustar&iacutea tener un cuerpo. <br> Cualquier cuerpo, s&iacute. <br> Si eso les hace posible la existencia. <br> Les encantar&iacutea tener tus inmensas 
+			caderas o tu nariz o tus ojos o tu sonrisa o tus manos. <br> Porque eso ser&iacutea tener algo todav&iacutea. <br> Tu cuerpo es un veh&iacuteculo para transitar en el mundo.
+			<br> Una &uacutenica vez. <br> As&iacute que sea de la forma que sea, est&aacute bien. <br> Tu cuerpo es un instrumento para porder sentir lo que te rodea. <br> Para poder amar.
+			<br> As&iacute que la pr&oacutexima vez que te mires en al espejo y te quieras borrar. <br> Y quieras desaparecer porque no te gusta nada de lo que ves. <br> Piensa de d&oacutende 
+			vienes. <br> Y hacia d&oacutende vamos todos y todas. <br> Piensa en aquello feo que ves en ti, es lo que queda de los que se fueron. <br> Y que cada vez que te desprecias.
+			<br> Que desde&ntildeas el poder respirar. <br> Est&aacutes faltando el respeto a los muertos. <br> Est&aacutes olvidando todo lo bello. <br> De vivir.
+</div>
+
+
+
+<div style="padding:10px; width:auto; ">
+		<p style="border: dashed blue 4px; font-size:300%; background:Lavender; border-radius:20px; margin: auto; text-align:center; "> 
+			<strong><i>Imaginaci&oacuten</i></strong>
+		<p style="font-size:150%; text-align:justify; color: black; font-family:Lucida Console; font-style:italic; line-height:40px">
+			&nbsp &nbsp La ciencia est&aacute descubriendo que la imaginaci&oacuten juega un papel fundamental en la percepci&oacuten que tenemos de la realidad y en la elaboraci&oacuten de 
+			los recuerdos, los sue&ntildeos y los pensamientos. La inteligencia depende de ella, al igual que la creatividad, y solo potenci&aacutendola podemos avanzar 
+			hacia una sociedad m&aacutes sana y m&aacutes sabia.
+</div>
+
+
+
+<div style="padding:10px; width:auto; ">
+		<p style="border: dashed blue 4px; font-size:300%; background:Lavender; border-radius:20px; margin: auto; text-align:center; "> 
+			<strong><i>Inteligencia</i></strong>
+		<p style="font-size:150%; text-align:justify; color: black; font-family:Lucida Console; font-style:italic; line-height:40px">
+			&nbsp &nbsp Usar la inteligencia del coraz&oacuten no es algo qur podamos desear y que autom&aacuteticamente se cumpla. Aprender a escuchar a nuestro verdadero yo 
+			y no confundirlo con las voces de nuestros miedos, o de nuestros prejuicios, o de nuestros apetitos, es un trabajo constante que exige 
+			consciencia y, sobre todo, un entrenamiento diario, igual que asumimos que para tocar un instrumento tenemos que practicar y practicar 
+			hasta que la m&uacutesica pueda fluir como su no hubiera t&eacutecnica detr&aacutes.
+			<br> &nbsp &nbsp La imaginaci&oacuten es un ingrediente esencial del pensamiento y de la inteligencia. Las m&aacutequinas pueden calcular prodigiosamente, pero no 
+			tienen verdadera inteligencia, entre otras cosas porque carecen de imaginaci&oacuten.
+			<br> &nbsp &nbsp No hay &quotinteligencia artificial&quot: la verdadera inteligencia es natural y cordial: arraigada en el coraz&oacuten. Sin imaginaci&oacuten no habr&iacutea creatividad: 
+			todo ser&iacutea predecible y aburrido. La imaginaci&oacuten es vida.
+</div>
+
+
+
+<div style="padding:10px; width:auto; ">
+		<p style="border: dashed blue 4px; font-size:300%; background:Lavender; border-radius:20px; margin:auto; text-align:center; "> 
+			<strong><i>Sonrisa</i></strong>
+		<p style="font-size:150%; text-align:justify; color: black; font-family:Lucida Console; font-style:italic; line-height:40px;">
+			&nbsp &nbsp En el amor de pareja, los humanos sufrimos una especie de espejismo cuando nos enamoramos. El enamoramiento es una droga alucin&oacutegena muy potente que desata una oleada 
+			de emociones placenteras cercanas a la manera de una experiencia religiosa. Los humanos y las humanas entramos en &eacutextasis, rozamos la eternidad, tocamos el cielo con 
+			nuestras manos, paramos el tiempo y estallamos de felicidad cuando somos correspondidos y nos sentimos libres para amar.
+			<br> &nbsp &nbsp El cerebro al principio nos hace comportarnos como yonkis del amor: siempre queremos m&aacutes. M&aacutes sonrisas y m&aacutes risas, m&aacutes caricias, m&aacutes besos, m&aacutes abrazos, m&aacutes conversas, 
+			m&aacutes orgasmos.
+			<br> &nbsp &nbsp Nos convertimos en seres insaciables: todo el tiempo que pasamos junto al amado o amada nos parece poco, nos asaltan miedos irracionales a perder a nuestro amor, 
+			nos olvidamos de nuestra vida y nos sumergimos en un mundo de magia en el que todo es posible, sentimos que nuestra vida puede cambiar y que el amor nos llenar&aacute de abundancia 
+			en afecto, sexo y apoyo mutuo.
+			<br> &nbsp &nbsp Es un poco como delirar: nos cuesta pensar con claridad porque estamos borrachas de amor, disfrutando del momento, con los pies elevados del suelo, ajenas a la rutina del 
+			d&iacutea a d&iacutea. Y se nos nota en el cuerpo: todo el mundo nos ve m&aacutes guapas, con los ojos m&aacutes brillantes, con la piel y el pelo m&aacutes bonitos, con el rostro lleno de lozan&iacutea, con la 
+			sonrisa que no se desdibuja.
+			<br> &nbsp &nbsp Tambi&eacuten se nos nota en el estado de &aacutenimo y en nuestra generosidad y simpat&iacutea a la hora de relacionarnos con los dem&aacutes, que se sorprenden con nuestras ganas de ayudar, 
+			de ser amables, de regalar besos y abrazos. Porque el amor se multiplica, y hay tanta dosis de serotonina, adrenalina, dopamina y oxitocina que da para todo el mundo: amigas, 
+			familia, compa&ntildeeras de trabajo, vecindario, etc.
+			<br> &nbsp &nbsp La droga del amor nos hace sentir s&uacuteper poderosas, como pasa con la coca&iacutena, por ejemplo. Entonces una al enamorarse y ser correspondida se siente m&aacutes fuerte, y se pone a 
+			hacer todo lo que quer&iacutea hacer y no hac&iacutea. Es como que llega la hora del cambio, la hora de ponerse en marcha, la hora de construirse a una misma un mundo bonito para poder 
+			compartirlo con la otra persona. 
+			</div>
+
+<div style="padding:10px; width:auto; ">
+		<p style="border: dashed blue 4px; font-size:300%; background:Lavender; border-radius:20px; margin: auto; text-align:center; "> 
+			<strong><i>Mirada</i></strong>
+		<p style="font-size:150%; text-align:justify; color: black; font-family:Lucida Console; font-style:italic; line-height:40px;">
+			&nbsp &nbsp Me encantan las peronas que abrazan con la mirada. Las que sin decir nada, y cuando todo est&aacute en silencio, son capaces de acompa&ntildear mis momentos m&aacutes duros. Esas que con el brillo 
+			de su mirada transmiten un sinf&iacuten de emociones y me ayudan a recoger mis pedazos rotos. Sin exigirme, sin presionarme, tan solo acompa&ntildeandome.
+			<br> &nbsp &nbsp Personas hogar, personas con magia, personas que se definen por su gran coraz6oacuten, ese que no les cabe en su pecho. Expertas en despertar calma y 
+			especialistas en ayudar a volar, a brillar y a contagiar su luz. Amigas de la bondad y la esperanza, pero sobre todo, del amor hacia los dem&aacutes.
+			<br> &nbsp &nbsp Las personas que abrazan con la mirada no solo me encantan, sino que las admiro. Son mi ejemplo a seguir y mi m&aacutes preciado tesoro.
+			<br> &nbsp &nbsp Adoro su magia, su facilidad para transmitir serenidad, para inspirar y para hacer sentir que cada momento con ellas es &uacutenico. Son cuidadosas, 
+			educadas y con gran sentido de la responsabilidad y el respeto.
+			<br> &nbsp &nbsp A pesar de que abracen con sus miradas y sean expertas en el lenguaje de los gestos, sus palabras siempre aparecen en el momento adecuado. Nunca 
+			dicen de m&aacutes, pero tampoco de menos. Son como una especie de semilla que regalan a los dem&aacutes, para que en su interior vaya crecuendo una bonita flor: 
+			la autoestima. Una valoraci&oacuten que solo florecer&aacute si cada uno se encarga de regar y cuidar.
+			<br> &nbsp &nbsp Precisamente su magia es esa, la habilidad de conseguir cosas extraordinarias desde la sencillez y humildad, sin mostrar su secreto, que no es otro que su sabidur&iacutea interior. 
+			Su mayor estrategia es el dominio del silencio para generar sentimientos, coser heridas y ense&ntildear a los dem&aacutes c&oacutemo hacerlo. Pero tambi&eacuten abrazar desganas, tristezas, des&aacutenimos. 
+			Su presencia es como un refugio porque son art&iacutefices de un manto invisible de calma y seguridad, sensaciones unidas por los hilos del afecto.
+			<br> &nbsp &nbsp Las personas que abrazan con la mirada no solo se distinguen por su magia, tambi&eacuten su luz es un signo que las identifica. Esa radiaci&oacuten de bondad que brilla a kil&oacutemetros de 
+			distancia y que hasta con los ojos cerrados puede sentirse por su profinda intensidad, por la vibraci&oacuten interior que provocan.
+			<br> &nbsp &nbsp Son especialistas en detectar los d&iacuteas nublados de los dem&aacutes, esos en los que escasea la alegr&iacutea, la motivaci&oacuten se ha marchado y es la tristeza la due&ntildea del &aacutenimo. Lo mejor de 
+			todo es que no prometen arco&iacuteris , ni fuerzan a ser felices, simplemente escuchan y por supuesto, hacen sentir escuchado, validado y comprendido. Te hacen sentir querido.
+			<br> &nbsp &nbsp Las personas que abrazan con la mirada son ese tipo de personas inolvidables. lo mejor que podemos hacer con ellas es cuidarlas, regalarles nuestro tiempo y, por supuesto, 
+			valorar lo qu hacen. Porque aunque su afecto sea infinito tambi&eacuten se merecen recogerlo de nuestra parte. Cuidemos a quien nos cuida, porque se lo merecen y porque tambi&eacuten lo 
+			necesitan. Adem&aacutes, es la &uacutenica forma de fortalecer v6iacutenculos de acero inolvidables.
+</div>
+
+<div style="padding:10px; width:auto; ">
+		<p style="border: dashed blue 4px; font-size:300%; background:Lavender; border-radius:20px; margin:auto; text-align:center; "> 
+			<strong><i>Carisma</i></strong>
+		<p style="font-size:150%; text-align:justify; color: black; font-family:Lucida Console; font-style:italic; line-height:40px;">
+			&nbsp &nbsp Ser el centro de atenci&oacuten, que se le pidan consejos o inspirar a los trabajadores que est&aacuten a su cargo son algunas de las aptitutes de alguien carism&aacutetico. Quiz&aacutes algunos les envidien 
+			por esa capacidad de encantar a los dem&aacutes. Por tener siempre las palabras certeras o por irradiar seguridad en cada paso. &iquestUna perosna con carisma tiene un don especial o ha hechizado a los 
+			dem&aacutes con sus artima&ntildeas?
+			<br> &nbsp &nbsp Muchos confunden a un carism&aacutetico con un eg&oacutelatra insoportable y por ello sienten rechazo m&aacutes que aceptaci&oacuten. Ahora bien, el que tiene esta &quotvirtud&quot no hace ver a los dem&aacutes como inferiores, 
+			sino que los inspira para que puedan sacar lo mejor de ellos.
+			<br> &nbsp &nbsp Quiz&aacutes varias de estas caracter&iacutesticas definen a una persona, pero no a una persona con carisma, debido a que tal vez a&uacuten no se han desarrollado las virtudes como corresponde o que la verg&uumlenza, 
+			el temor y la timidez no permite explorar el lado m&aacutes atrayente hacia los dem&aacutes.
+			<br> &nbsp &nbsp La capacidad de escuchar al otro es fundamental para ser carism&aacutetico. Al hacerlo se estar&aacute demostrando aprecio y que los dem&aacutes le importan. Pero no solo eso es necesario, sino tambien la buena 
+			comunicaci&oacuten de las ideas o pensamientos en el momento justo, y siempre como una opini&oacuten y no como una orden.
+			<br> &nbsp &nbsp Estamos frente a alguien de confianza, estamos atravesando un momento complicado y con pocas palabras logra reconstruir el &aacutenimo que pens&aacutebamos perdido por el camino &iquestC&oacutemo lo ha logrado? 
+			Escuchando, interpretando y elgidiendo con maestr&iacutea sus palabras, pero tambi&eacuten el tono y su postura corporal.
+			<br> &nbsp &nbsp La creatividad y la visi&oacuten pueden definir a una persona con carisma. Tener buenas ideas, pensar a futuro y ser exitosos son consecuencias de su forma de actuar. No por nada suelen llevar 
+			adelante empresas o proyectos con la sensaci&oacuten de tener que invertir poco esfuerzo.
+</div>
+
+<div style="padding:10px; width:auto; ">
+		<p style="border: dashed blue 4px; font-size:300%; background:Lavender; border-radius:20px; margin: auto; text-align:center; "> 
+			<strong><i>Mis Palabras</i></strong>
+		<p style="font-size:150%; text-align:justify; color: black; font-family:Lucida Console; font-style:italic; line-height:40px;">
+			Hasta aqu&iacute lo dejo. Perd&iacute la inspiraci6oacuten y me dijiste adem&aacutes que no sabr&iacuteas como explicar. As&iacute que no te preocupes.
+			Lo de arriba es lo que m&aacutes me gusta de ti, hay varias cosas m&aacutes, pero no alcanc&eacute. Un abrazo.
+</div>
+
+
+
+
+</body>
+</html>
